@@ -1,16 +1,29 @@
-/* main css*/
-    .character-sheet-container {
+    /* main css*/
+
+    .sheet-character-sheet-container label {
+        padding-right:0
+    }
+    .sheet-character-sheet-container {
         display:block;
         width:1800px;
         height:1325px;
-        background-image:url('./img/household_background_empty.png');
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/household_background_big_empty.png?raw=true');
         position: relative;
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
-    .form-left-container {
-        width:50%;
-        height:100%;
+    .sheet-form-right-container {
+        width:900px;
+        display: inline-block;
+        position: absolute;
+        top:0px;
+        left:882px;
+    }
+    .sheet-form-left-container {
+        display: inline-block;
+        width:900px;
+        position: absolute;
+        top:0px;
     }
     input[type=checkbox] {
         width:18px;
@@ -20,277 +33,1269 @@
     input[type=checkbox] + label {
         cursor:pointer;
     }
-    .main input[type=checkbox] + label {
+    input[type=radio] {
+        width:18px;
+        height:18px;
+        display:none;
+    }
+    input[type=radio] + label {
+        cursor:pointer;
+        background-size:100%;
+    }
+
+    
+    /* upper left general */
+    .sheet-main input[type=checkbox] + label {
         background:transparent;
         display:inline-block;
         width:27px;
         height:27px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    .minor input[type=checkbox] + label {
+    .sheet-minor input[type=radio] + label {
         background:transparent;
         display:inline-block;
         width:18px;
         height:18px;
         padding: 0 0 0 0px;
-        margin-left: -0.2;
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    .characteristics {
-        padding-left:28%;
-        width: 72%;
-        height:78%;
+    .sheet-characteristics {
+        width:210px;
+        display: inline-block;
         position:relative;
+        padding-top: 96px;
+        padding-left: 220px;
     }
-    .characteristics .minor {
+    .sheet-aces-traits-moves {
+        width: 450px;
+        display: inline-block;
+        
+    }
+    .sheet-minor-characteristics-container {
+        display:block;
+    }
+    .sheet-characteristics .minor {
         top: 7.5px;
         left:33.5px;
     }
-    .characteristics-minor {
+    .sheet-characteristics-minor {
+        display:inline-flex;
+        flex-direction:row-reverse;
         position:relative;
-        width:100%;  
-        margin-top: 6;
-        margin-left: 17.5;
-
+        height: 30px;
+    }
+    .sheet-main-minor {
+        display:inline-flex;
+        flex-direction:row-reverse;
+        position:relative;
+        height: 30px;
+    }
+    .sheet-main-container {
+        display:inline-flex;
+        flex-direction:row-reverse;
+        position:relative;
+        height: 30px;
+    }
+    .sheet-left-upper {
+        display: block;
+    }
+    .sheet-main,.sheet-minor {
+        width:90px;
     }
 
     /* society css*/
-    .society {
-        padding-top:15%;
+    .sheet-society {
         position: relative;
     }
-    .society .main {
+    .sheet-society .sheet-main {
         position:relative;
-        width:100%;  
-        margin-top: 15;
-        margin-left: 1;
+        margin-top: 16px;
+        margin-left: 1px;
     }
-    .society .minor {
+    .sheet-society .sheet-minor {
         position:relative;
-        width:100%;
+        padding-left: 60px;
+        padding-top: 10px;
     }
-    .society .minor input[type=checkbox] + label {
-        background-image:url('./img/society_small_empty.png');
+    .sheet-society .sheet-minor input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/society_small_empty.png');
         display:inline-block;
         width:18px;
         height:18px;
         padding: 0 0 0 0;
-        margin-left: 1;
+        margin-left: 1px;
     }
-    .society .minor input[type=checkbox]:checked + label {
-        background-image:url('./img/society_icon_small.png');
+    .sheet-society .sheet-minor input[type=radio]:checked + label, .sheet-society .sheet-minor input[type=radio]:checked ~ input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/society_icon_small.png');
         display:inline-block;
         width:18px;
         height:18px;
         padding: 0 0 0 0;
-        margin-left: 1;
+        margin-left: 1px;
     }
-    .sheet-society .sheet-main input[type=checkbox]:checked + label {
-        background-image:url('./img/society_icon.png');
+    .sheet-society .sheet-main input[type=radio]:checked + label, .sheet-society .sheet-main input[type=radio]:checked ~ input[type=radio] + label  {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/society_icon.png');
         display:inline-block;
         width:27px;
         height:27px;
         padding: 0 0 0 0;
-        margin-left: 1;
+        margin-left: 1px;
     }
-    .sheet-society .sheet-main input[type=checkbox] + label {
-        background-image:url('./img/society_big_empty.png');
+    .sheet-society .sheet-main input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/society_big_empty.png');
         display:inline-block;
         width:27px;
         height:27px;
         padding: 0 0 0 0;
-        margin-left: 1;
-    }
-    .sheet-minor .sheet-society-charm {
-        padding-top:3px;
-    }
-    .sheet-minor .sheet-society-eloquence {
-        padding-top:2px;
-    }
-    .sheet-minor .sheet-society-etiquette {
-        padding-top:2px;
-    }
-    .sheet-minor .sheet-society-grace {
-        padding-top:3px;
+        margin-left: 1px;
     }
 
     /* academia css*/
     .sheet-academia {
-        top:60px;
-        width: 100%;
+        padding-top:49px;
         position: relative;
     }
-    .sheet-academia .sheet-main, .sheet-academia .sheet-minor {
+    .sheet-academia .sheet-main {
         position:relative;
-        width:100%;
+    }
+    .sheet-academia .sheet-minor {
+        position:relative;
+        padding-left: 60px;
+        padding-top: 10px;
     }
     .sheet-academia .sheet-academia-care {
         position:relative;
-        width:100%;
+        flex-direction: row-reverse;
     }
-    .sheet-academia .sheet-minor input[type=checkbox]:checked + label {
-        background-image:url('./img/academia_icon_small.png');
+    .sheet-academia .sheet-minor input[type=radio]:checked + label, .sheet-academia .sheet-minor input[type=radio]:checked ~ input[type=radio] + label  {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/academia_icon_small.png');
         display:inline-block;
         width:18px;
         height:18px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
     }
-    .sheet-academia .sheet-main input[type=checkbox]:checked + label {
-        background-image:url('./img/academia_icon.png');
-        display:inline-block;
-        width:27px;
-        height:27px;
-        padding: 0 0 0 0;
-        margin-left: -0.2;
-    }
-    .sheet-academia .sheet-minor input[type=checkbox] + label {
-        background-image:url('./img/academia_small_empty.png');
+    .sheet-academia .sheet-minor input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/academia_small_empty.png');
         display:inline-block;
         width:18px;
         height:18px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
     }
-    .sheet-academia .sheet-main input[type=checkbox] + label {
-        background-image:url('./img/academia_big_empty.png');
+    .sheet-academia .sheet-main input[type=radio]:checked + label, .sheet-academia .sheet-main input[type=radio]:checked ~ input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/academia_icon.png');
         display:inline-block;
         width:27px;
         height:27px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
     }
-    .sheet-minor .sheet-academia-craft {
-        padding-top:1.5px;
-    }
-    .sheet-minor .sheet-academia-culture {
-        padding-top:1.5px;
-    }
-    .sheet-minor .sheet-academia-insight {
-        padding-top:2px;
-    }
-    .sheet-minor .sheet-academia-investigation {
-        padding-top:1.5px;
+    .sheet-academia .sheet-main input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/academia_big_empty.png');
+        display:inline-block;
+        width:27px;
+        height:27px;
+        padding: 0 0 0 0;
     }
 
     /* war css*/
     .sheet-war {
-        top:127px;
-        width: 100%;
+        padding-top:49px;
         position: relative;
     }
-    .sheet-war .sheet-main, .sheet-war .sheet-minor {
+    .sheet-war .sheet-main {
         position:relative;
-        width:100%;
+    }
+    .sheet-war .sheet-minor {
+        position:relative;
+        padding-left: 60px;
+        padding-top: 10px;
     }
     .sheet-war .sheet-war-art {
         position:relative;
-        width:100%;
     }
-    .sheet-war .sheet-minor input[type=checkbox]:checked + label {
-        background-image:url('./img/war_icon_small.png');
+    .sheet-war .sheet-minor input[type=radio]:checked + label, .sheet-war .sheet-minor input[type=radio]:checked ~ input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/war_icon_small.png');
         display:inline-block;
         width:18px;
         height:18px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
     }
-    .sheet-war .sheet-main input[type=checkbox]:checked + label {
-        background-image:url('./img/war_icon.png');
-        display:inline-block;
-        width:27px;
-        height:27px;
-        padding: 0 0 0 0;
-        margin-left: -0.2;
-    }
-    .sheet-war .sheet-minor input[type=checkbox] + label {
-        background-image:url('./img/war_small_empty.png');
+    .sheet-war .sheet-minor input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/war_small_empty.png');
         display:inline-block;
         width:18px;
         height:18px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
     }
-    .sheet-war .sheet-main input[type=checkbox] + label {
-        background-image:url('./img/war_big_empty.png');
+    .sheet-war .sheet-main input[type=radio]:checked + label, .sheet-war .sheet-main input[type=radio]:checked ~ input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/war_icon.png');
         display:inline-block;
         width:27px;
         height:27px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
     }
-    .sheet-minor .sheet-war-charm {
-        padding-top:1.5px;
-    }
-    .sheet-minor .sheet-war-eloquence {
-        padding-top:1.5px;
-    }
-    .sheet-minor .sheet-war-etiquette {
-        padding-top:2px;
-    }
-    .sheet-minor .sheet-war-grace {
-        padding-top:1.5px;
+    .sheet-war .sheet-main input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/war_big_empty.png');
+        display:inline-block;
+        width:27px;
+        height:27px;
+        padding: 0 0 0 0;
     }
 
     /* street css*/
     .sheet-street {
-        top:194px;
-        width: 100%;
+        padding-top:50px;
         position: relative;
     }
-    .sheet-street .sheet-main, .sheet-street .sheet-minor {
+    .sheet-street .sheet-main {
         position:relative;
-        width:100%;
+    }
+    .sheet-street .sheet-minor {
+        position:relative;
+        padding-left: 60px;
+        padding-top: 10px;
     }
     .sheet-street .sheet-street-art {
         position:relative;
+    }
+    .sheet-street .sheet-minor input[type=radio]:checked + label, .sheet-street .sheet-minor input[type=radio]:checked ~ input[type=radio] + label   {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/street_icon_small.png');
+        display:inline-block;
+        width:18px;
+        height:18px;
+        padding: 0 0 0 0;
+    }
+    .sheet-street .sheet-minor input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/street_small_empty.png');
+        display:inline-block;
+        width:18px;
+        height:18px;
+        padding: 0 0 0 0;
+    }
+    .sheet-street .sheet-main input[type=radio]:checked + label,.sheet-street .sheet-main input[type=radio]:checked ~ input[type=radio] + label  {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/street_icon.png');
+        display:inline-block;
+        width:27px;
+        height:27px;
+        padding: 0 0 0 0;
+    }
+    .sheet-street .sheet-main input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/street_big_empty.png');
+        display:inline-block;
+        width:27px;
+        height:27px;
+        padding: 0 0 0 0;
+    }
+
+    /* equipment + wealth */
+    .sheet-wealth {
+        padding-left:500px;
+        padding-top:13px;
+    }
+    .sheet-wealth .sheet-upper-middle-class {
+        display:inline-block;
+        position: relative;
+    }
+    .sheet-wealth .sheet-high-society {
+        display: inline-block;
+        left: 117px;
+        position: relative;
+    }
+    .sheet-wealth input[type=radio] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/circle_empty.png');
+        display:block;
+        width:22px;
+        height:22px;
+        padding: 0 0 0 0;
+    }
+    .sheet-wealth input[type=radio]:checked + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/circle_check.png');
+        display:block;
+        width:22px;
+        height:22px;
+        padding: 0 0 0 0;
+    }
+    .sheet-gold {
+        display: inline-block;
+        position: absolute;
+        margin-left: 250px;
+        margin-top: 5px;
+    }
+    .sheet-gold input[type=number] {
+        width:40px;
+        height:40px;
+        background:transparent;
+        border: none;
+    }
+    .sheet-equipment-container {
+        height: 146px;
+        position: absolute;
+        top: 1102px;
+        left: 68px;
+    }
+    .sheet-equipment-left {
+        width: 230px;
+        height: 154px;
+        display: inline-block;
+    }
+    .sheet-equipment-right {
+        position: absolute;
+        display: inline-block;
+        width: 559px;
+        height: 146px;
+    }
+    .sheet-equipment-container textarea {
         width:100%;
+        height:100%;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 25px;
     }
-    .sheet-street .sheet-minor input[type=checkbox]:checked + label {
-        background-image:url('./img/street_icon_small.png');
-        display:inline-block;
+
+    /* aces */
+    .sheet-aces {
+        top: 0;
+        position: absolute;
+        margin-top: 83px;
+    }
+    .sheet-ace-society {
+        width:60px;
+        height:60px;
+        margin-left: 94px;
+        margin-top: 116px;
+        position:absolute;
+    }
+    .sheet-aces-traits-moves .sheet-ace-society input[type=checkbox]:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_society.png');
+        display:block;
+        width:28px;
+        height:28px;
+        padding: 0 0 0 0;
+
+    }
+    .sheet-aces-traits-moves .sheet-ace-society  input[type=checkbox] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_society_empty.png');
+        display:block;
+        width:28px;
+        height:28px;
+        padding: 0 0 0 0;
+    }
+    .sheet-ace-academia {
+        width:60px;
+        height:60px;
+        margin-left: 141px;
+        margin-top: 100px;
+        position:absolute;
+    }
+    .sheet-aces-traits-moves .sheet-ace-academia input[type=checkbox]:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_academia.png');
+        display:block;
+        width:28px;
+        height:28px;
+        padding: 0 0 0 0;
+
+    }
+    .sheet-aces-traits-moves .sheet-ace-academia  input[type=checkbox] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_academia_empty.png');
+        display:block;
+        width:28px;
+        height:28px;
+        padding: 0 0 0 0;
+    }
+    .sheet-ace-war {
+        width:60px;
+        height:60px;
+        margin-left: 194px;
+        margin-top: 94px;
+        position:absolute;
+    }
+    .sheet-aces-traits-moves .sheet-ace-war input[type=checkbox]:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_war.png');
+        display:block;
+        width:28px;
+        height:28px;
+        padding: 0 0 0 0;
+
+    }
+    .sheet-aces-traits-moves .sheet-ace-war  input[type=checkbox] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_war_empty.png');
+        display:block;
+        width:28px;
+        height:28px;
+        padding: 0 0 0 0;
+    }
+    .sheet-ace-street {
+        width:60px;
+        height:60px;
+        margin-left: 244px;
+        margin-top: 99px;
+        position:absolute;
+    }
+    .sheet-aces-traits-moves .sheet-ace-street input[type=checkbox]:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_street.png');
+        display:block;
+        width:28px;
+        height:28px;
+        padding: 0 0 0 0;
+
+    }
+    .sheet-aces-traits-moves .sheet-ace-street  input[type=checkbox] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_street_empty.png');
+        display:block;
+        width:28px;
+        height:28px;
+        padding: 0 0 0 0;
+    }
+    .sheet-ace-joker {
+        width:60px;
+        height:60px;
+        margin-left: 294px;
+        margin-top: 116px;
+        position:absolute;
+    }
+    .sheet-aces-traits-moves .sheet-ace-joker input[type=checkbox]:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_joker.png');
+        display:block;
+        width:34px;
+        height:34px;
+        padding: 0 0 0 0;
+
+    }
+    .sheet-aces-traits-moves .sheet-ace-joker  input[type=checkbox] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/ace_joker_empty.png');
+        display:block;
+        width:34px;
+        height:34px;
+        padding: 0 0 0 0;
+    }
+
+    /* moves and traits */
+
+    .sheet-traits {
+        width: 422px;
+        height: 298px;
+        padding-left: 0;
+        top: 337px;
+        position: absolute;
+    }
+    .sheet-moves {
+        width: 422px;
+        position: absolute;
+        top: 712px;
+    }
+
+    .sheet-aces-traits-moves .sheet-traits textarea {
+        width:100%;
+        height:100%;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 25px;
+    }
+    .sheet-aces-traits-moves .sheet-moves textarea {
+        width:100%;
+        height:100%;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 25px;
+    }
+    .sheet-aces-traits-moves .sheet-move-one {
+        margin-bottom:17px;
+        height: 86px;
+        position: relative;
+    }
+    .sheet-aces-traits-moves .sheet-move-two {
+        margin-bottom:17px;
+        height: 87px;
+        position: relative;
+    }
+    .sheet-aces-traits-moves .sheet-move-three {
+        height: 87px;
+        position: relative;
+    }
+    .sheet-aces-traits-moves .sheet-move-used + label{
+        right: -14px;
+        position: absolute;
+        bottom: 21px;
+    }
+    .sheet-aces-traits-moves input[type=checkbox].sheet-move-used + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/circle_empty.png');
+        display:block;
+        width:22px;
+        height:22px;
+        padding: 0 0 0 0;
+    }
+    .sheet-aces-traits-moves input[type=checkbox].sheet-move-used:checked + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/circle_check.png');
+        display:block;
+        width:22px;
+        height:22px;
+        padding: 0 0 0 0;
+    }
+    .sheet-move-attributes input[type=checkbox].sheet-move-social + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/society_small_empty.png');
+        position:absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
         width:18px;
         height:18px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
+        right:61px;
+        top:68px;
     }
-    .sheet-street .sheet-main input[type=checkbox]:checked + label {
-        background-image:url('./img/street_icon.png');
-        display:inline-block;
-        width:27px;
-        height:27px;
-        padding: 0 0 0 0;
-        margin-left: -0.2;
-    }
-    .sheet-street .sheet-minor input[type=checkbox] + label {
-        background-image:url('./img/street_small_empty.png');
-        display:inline-block;
+    .sheet-move-attributes input[type=checkbox].sheet-move-social:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/society_icon_small.png');
+        position:absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
         width:18px;
         height:18px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
+        right:61px;
+        top:68px;
     }
-    .sheet-street .sheet-main input[type=checkbox] + label {
-        background-image:url('./img/street_big_empty.png');
-        display:inline-block;
-        width:27px;
-        height:27px;
+    .sheet-move-attributes input[type=checkbox].sheet-move-academia + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/academia_small_empty.png');
+        position:absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:18px;
+        height:18px;
         padding: 0 0 0 0;
-        margin-left: -0.2;
+        right:41px;
+        top:68px;
     }
-    .sheet-minor .sheet-street-charm {
-        padding-top:1.5px;
+    .sheet-move-attributes input[type=checkbox].sheet-move-academia:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/academia_icon_small.png');
+        position:absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:18px;
+        height:18px;
+        padding: 0 0 0 0;
+        right:41px;
+        top:68px;
     }
-    .sheet-minor .sheet-street-eloquence {
-        padding-top:1.5px;
+    .sheet-move-attributes input[type=checkbox].sheet-move-war + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/war_small_empty.png');
+        position:absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:18px;
+        height:18px;
+        padding: 0 0 0 0;
+        right:21px;
+        top:68px;
     }
-    .sheet-minor .sheet-street-etiquette {
-        padding-top:2px;
+    .sheet-move-attributes input[type=checkbox].sheet-move-war:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/war_icon_small.png');
+        position:absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:18px;
+        height:18px;
+        padding: 0 0 0 0;
+        right:21px;
+        top:68px;
     }
-    .sheet-minor .sheet-street-grace {
-        padding-top:1.5px;
+    .sheet-move-attributes input[type=checkbox].sheet-move-street + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/street_small_empty.png');
+        position:absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:18px;
+        height:18px;
+        padding: 0 0 0 0;
+        right:1px;
+        top:68px;
     }
+    .sheet-move-attributes input[type=checkbox].sheet-move-street:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/street_icon_small.png');
+        position:absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:18px;
+        height:18px;
+        padding: 0 0 0 0;
+        right:1px;
+        top:68px;
+    }
+
+
+    /*character sheet right*/
+
+    /* decorum */
+    .sheet-decorum {
+        margin-top: 63px;
+        margin-left: 22px;
+    }
+    .sheet-decorum input[type=radio] + label{
+        background:transparent;
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:48px;
+        height:48px;
+    }
+    .sheet-decorum input[type=radio]:checked + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/cross_big.png');
+        position: absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:block;
+        width:48px;
+        height:48px;
+    }
+    .sheet-decorum input[type=radio].sheet-uncouth + label {
+        margin-top:96px;
+        margin-left:82px;
+    }
+    .sheet-decorum input[type=radio].sheet-shabby + label {
+        margin-top:104px;
+        margin-left:142px;
+    }
+    .sheet-decorum input[type=radio].sheet-decent + label {
+        margin-top:98px;
+        margin-left:202px;
+    }
+    .sheet-decorum input[type=radio].sheet-elegant + label {
+        margin-top:102px;
+        margin-left:263px;
+    }
+    .sheet-decorum input[type=radio].sheet-pompous + label {
+        margin-top:95px;
+        margin-left:323px;
+    }
+
+    /* stress */
+    .sheet-stress {
+        margin-top: 247px;
+        position: absolute;
+        margin-left: 70px;
+    }
+    .sheet-inline-stress {
+        display:inline-flex;
+        flex-direction:row-reverse;
+    }
+    .sheet-inline-stress input[type=radio] + label {
+        background:transparent;
+        position: absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:block;
+        width:32px;
+        height:32px;
+    }
+    .sheet-inline-stress input[type=radio]:checked + label, .sheet-inline-stress input[type=radio]:checked + label ~ input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/cross_big.png');
+        position: absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:block;
+        width:32px;
+        height:32px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-1 + label {
+        left: 3px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-2 + label {
+        left: 33px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-3 + label {
+        left: 62px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-4 + label {
+        left: 92px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-5 + label {
+        left: 121px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-6 + label {
+        left: 151px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-7 + label {
+        left: 180px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-8 + label {
+        left: 210px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-9 + label {
+        left: 239px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-10 + label {
+        left: 269px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-11 + label {
+        left: 298px;
+        margin-top: 3px;
+    }
+    .sheet-inline-stress input[type=radio].sheet-stress-12 + label {
+        left: 328px;
+        margin-top: 3px;
+    }
+    /*button fo healing*/
+    .sheet-heal-all {
+        margin-top:40px;
+        width:80px;
+    }
+
+    .sheet-conditions {
+        margin-top:400px;
+        margin-left:68px;
+        position:absolute;
+    }
+
+    .sheet-conditions .sheet-conditions-text-upper {
+        margin-top:117px;
+    }
+    .sheet-conditions .sheet-conditions-text-upper input, .sheet-conditions .sheet-conditions-text-lower input{
+        width:340px;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+    .sheet-conditions .sheet-conditions-text-lower {
+        margin-top:4px;
+    }
+
+    .sheet-conditions-society {
+        position: absolute;
+        top:0px;
+        margin-left:157px;
+        width:20px;
+    }
+    .sheet-conditions-society input[type=checkbox] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/society_small_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+    .sheet-conditions-society input[type=checkbox]:checked + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/society_icon_small.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+    .sheet-conditions-academia {
+        position: absolute;
+        top:28px;
+        margin-left:157px;
+        width:20px;
+    }
+    .sheet-conditions-academia input[type=checkbox] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/academia_small_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+
+    .sheet-conditions-academia input[type=checkbox]:checked + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/academia_icon_small.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+    .sheet-conditions-war {
+        position: absolute;
+        top:58px;
+        margin-left:157px;
+        width:20px;
+    }
+    .sheet-conditions-war input[type=checkbox] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/war_small_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+
+    .sheet-conditions-war input[type=checkbox]:checked + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/war_icon_small.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+    .sheet-conditions-street {
+        position: absolute;
+        top:90px;
+        margin-left:157px;
+        width:20px;
+    }
+    .sheet-conditions-crossed {
+        width:20px;
+    }
+    .sheet-conditions-street input[type=checkbox] + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/street_small_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+
+    .sheet-conditions-street input[type=checkbox]:checked + label{
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/street_icon_small.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+    
+    .sheet-conditions-right {
+        position: absolute;
+        top:0px;
+        margin-left:341px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-tired + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-tired:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_crossed.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-sick + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:30px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-sick:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_crossed.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:30px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-poisoned + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:60px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-poisoned:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_crossed.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:60px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-broken + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:90px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-broken:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_crossed.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:90px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-upper + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:120px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-upper:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_crossed.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:120px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-lower + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_empty.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:150px;
+    }
+    .sheet-conditions-right input[type=checkbox].sheet-lower:checked + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/checkbox_crossed.png');
+        position: absolute;
+        display:block;
+        background-size:100%;
+        background-repeat:no-repeat;
+        width:24px;
+        height:24px;
+        top:150px;
+    }
+    .sheet-contracts {
+        margin-top: 648px;
+        margin-left: 74px;
+        position: absolute;
+    }
+    .sheet-contracts textarea {
+        width:356px;
+        height:240px;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 25px;
+    }
+    .sheet-ttt-container {
+        height:40px;
+        width:360px;
+    }
+    .sheet-ttt {
+        position: absolute;
+        margin-top:903px;
+        margin-left:74px;
+        display:inline-flex;
+        flex-direction:row-reverse;
+    }
+    .sheet-ttt input[type=radio] + label {
+        background:transparent;
+        position: absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:block;
+        width:32px;
+        height:32px;
+    }
+    .sheet-ttt input[type=radio]:checked + label, .sheet-ttt input[type=radio]:checked + label ~ input[type=radio] + label {
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/cross_big.png');
+        position: absolute;
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:block;
+        width:32px;
+        height:32px;
+    }
+    .sheet-ttt input[type=radio].sheet-ttt-0 + label {
+        position:absolute;
+        top:0;
+        left:52px;
+    }
+    .sheet-ttt input[type=radio].sheet-ttt-1 + label {
+        position:absolute;
+        top:0;
+        left:95px;
+    }
+    .sheet-ttt input[type=radio].sheet-ttt-2 + label {
+        position:absolute;
+        top:0;
+        left:138px;
+    }
+    .sheet-ttt input[type=radio].sheet-ttt-3 + label {
+        position:absolute;
+        top:0;
+        left:181px;
+    }
+    .sheet-ttt input[type=radio].sheet-ttt-4 + label {
+        position:absolute;
+        top:0;
+        left:224px;
+    }
+    .sheet-ttt input[type=radio].sheet-ttt-5 + label {
+        position:absolute;
+        top:0;
+        left:268px;
+    }
+
+    .sheet-notes {
+        margin-top: 951px;
+        margin-left: 74px;
+        position: absolute;
+    }
+    .sheet-notes textarea {
+        width:356px;
+        height:240px;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 25px;
+    }
+
+
+    /* character sheet right */
+    .sheet-right-right {
+        position: absolute;
+        left:479px;
+    }
+
+
+    /* buttons */
+    .sheet-minor button[type="action"] {
+        border-radius: 8px;
+        width: 13px;
+        height: 16px;
+    }
+    
+    .sheet-minor button[type="action"]::before {
+        font-family: "dicefontd20";
+        content: "t";
+    }
+    /*character questionaire */
+    .sheet-character-pass {
+        position: absolute;
+        left:100px;
+        top:456px;
+    }
+    .sheet-character-pass input {
+        width:280px;
+        height:30px;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 20px;
+    }
+
+    /* Memories */
+    .sheet-memories {
+        position: absolute;
+        left:38px;
+        top:739px;
+    }
+    .sheet-memories input {
+        width:342px;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 20px;
+        padding-bottom:4px;
+    }
+    .sheet-memories .sheet-memories-fourth textarea {
+        width:342px;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 25px;
+        height:50px;
+        margin-bottom:0px;
+    }
+    .sheet-memories .sheet-memories-fifth textarea {
+        width:342px;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 25px;
+        height:50px;
+        margin-bottom:0px;
+    }
+
+    /* experiences*/
+    .sheet-experiences {
+        position: absolute;
+        left:5px;
+        top:1071px;
+    }
+    .sheet-experiences textarea {
+        width:376px;
+        border: none;
+        background:transparent;
+        display:block;
+        text-align:left;
+        resize:none;
+        font-size: 20px;
+        height:120px;
+    }
+    
+    /* dice prefix sheet-rolltemplate-householdroll*/
+    .sheet-rolltemplate-householdroll .sheet-household-roll .sheet-roll-rolls {
+        position:relative;
+        width:100%;
+        padding-top:5px;
+        padding-bottom:5px;
+        font-size: 0;
+    }
+    .sheet-rolltemplate-householdroll .sheet-roll-household, .sheet-rolltemplate-householdroll .sheet-roll-academia, .sheet-rolltemplate-householdroll .sheet-roll-war, .sheet-rolltemplate-householdroll .sheet-roll-street, .sheet-rolltemplate-householdroll .sheet-roll-society, .sheet-rolltemplate-householdroll .sheet-roll-house {
+        display:inline-block;
+        
+    }
+    .sheet-rolltemplate-householdroll .sheet-roll-household-dice {
+        width:25px;
+        height:25px;
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/dice_household.png');
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:inline-block;
+    }
+    .sheet-rolltemplate-householdroll .sheet-roll-society-dice {
+        width:25px;
+        height:25px;
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/dice_society.png');
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:inline-block;
+    }
+    .sheet-rolltemplate-householdroll .sheet-roll-academia-dice {
+        width:25px;
+        height:25px;
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/dice_academia.png');
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:inline-block;
+    }
+    .sheet-rolltemplate-householdroll .sheet-roll-war-dice {
+        width:25px;
+        height:25px;
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/dice_war.png');
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:inline-block;
+    }
+    .sheet-rolltemplate-householdroll .sheet-roll-street-dice {
+        width:25px;
+        height:25px;
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/dice_street.png');
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:inline-block;
+    }
+    .sheet-rolltemplate-householdroll .sheet-roll-house-dice {
+        width:25px;
+        height:25px;
+        background-image:url('https://raw.githubusercontent.com/Minuninpanic/r20-household-character-sheet/main/img/dice_house.png');
+        background-size:100%;
+        background-repeat:no-repeat;
+        display:inline-block;
+    }
+    .sheet-rolltemplate-householdroll {
+        position: relative;
+        border: 4px solid red;
+    }
+        
+    
+    .sheet-rolltemplate-householdroll .sheet-pre-roll, .sheet-rolltemplate-householdroll .sheet-after-roll {
+        position: relative;
+        width: 35%;
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align:middle;
+    }
+    .sheet-rolltemplate-householdroll .sheet-after-roll {
+        border-left: 4px solid red;
+        width:60%;
+        font-size:16px;
+    }
+    .sheet-rolltemplate-householdroll .sheet-after-attribute {
+        display:block;
+    }
+    .sheet-rolltemplate-householdroll .sheet-main-success, .sheet-rolltemplate-householdroll .sheet-household-options, .sheet-rolltemplate-householdroll .sheet-roll-rolls {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .sheet-rolltemplate-householdroll .sheet-main-success {
+        border-bottom: 4px solid red;
+        border-top: 4px solid red;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-size:24px;
+        
+    }
+    .sheet-rolltemplate-householdroll .sheet-household-options {
+        border-top: 4px solid red;
+    }
+
+    
+    
