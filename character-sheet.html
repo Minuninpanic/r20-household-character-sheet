@@ -1,140 +1,1214 @@
 <form class="sheetform" autocomplete="off">
     <div class="sheet-character-sheet-container">
         <div class="sheet-form-left-container">
-            <div class="sheet-characteristics">
-                <div class="sheet-society">
-                    <div class="sheet-main">
-                        <input type="checkbox" title="@{society_2}" name="society_2" id="society_2" value="0"><label for="society_2"></label>
+            <div class="sheet-left-upper">
+                <div class="sheet-characteristics">
+                    <div class="sheet-society">
+                        <div class="sheet-main">
+                            <div class="sheet-main-container">
+                                <input type="radio" title="@{society}" name="attr_society" id="society_2" value="2"><label for="society_2"></label>
+                                <input type="radio" title="@{society}" name="attr_society" id="society_1" value="1" checked="checked"><label for="society_1"></label>
+                            </div>
+                        </div>
+                        <div class="sheet-minor">
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-society-art">
+                                    <button class="sheet-data-skill-art" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{art}" name="attr_art" id="art_4" value="4"/><label for="art_4"></label>
+                                    <input type="radio" title="@{art}" name="attr_art" id="art_3" value="3"/><label for="art_3"></label>
+                                    <input type="radio" title="@{art}" name="attr_art" id="art_2" value="2"/><label for="art_2"></label>
+                                    <input type="radio" title="@{art}" checked="checked" name="attr_art" id="art_1" value="1"/><label for="art_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-society-charm">
+                                    <button class="sheet-data-skill-charm" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{charm}" name="attr_charm" id="charm_4" value="4"/><label for="charm_4"></label>
+                                    <input type="radio" title="@{charm}" name="attr_charm" id="charm_3" value="3"/><label for="charm_3"></label>
+                                    <input type="radio" title="@{charm}" name="attr_charm" id="charm_2" value="2"/><label for="charm_2"></label>
+                                    <input type="radio" title="@{charm}" checked="checked" name="attr_charm" id="charm_1" value="1"/><label for="charm_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-society-eloquence">
+                                    <button class="sheet-data-skill-eloquence" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{eloquence}" name="attr_eloquence" id="eloquence_4" value="4"/><label for="eloquence_4"></label>
+                                    <input type="radio" title="@{eloquence}" name="attr_eloquence" id="eloquence_3" value="3"/><label for="eloquence_3"></label>
+                                    <input type="radio" title="@{eloquence}" name="attr_eloquence" id="eloquence_2" value="2"/><label for="eloquence_2"></label>
+                                    <input type="radio" title="@{eloquence}" checked="checked" name="attr_eloquence" id="eloquence_1" value="1"/><label for="eloquence_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-society-etiquette">
+                                    <button class="sheet-data-skill-etiquette" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{etiquette}" name="attr_etiquette" id="etiquette_4" value="4"/><label for="etiquette_4"></label>
+                                    <input type="radio" title="@{etiquette}" name="attr_etiquette" id="etiquette_3" value="3"/><label for="etiquette_3"></label>
+                                    <input type="radio" title="@{etiquette}" name="attr_etiquette" id="etiquette_2" value="2"/><label for="etiquette_2"></label>
+                                    <input type="radio" title="@{etiquette}" checked="checked" name="attr_etiquette" id="etiquette_1" value="1"/><label for="etiquette_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-society-grace">
+                                    <button class="sheet-data-skill-grace" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{grace}" name="attr_grace" id="grace_4" value="4"/><label for="grace_4"></label>
+                                    <input type="radio" title="@{grace}" name="attr_grace" id="grace_3" value="3"/><label for="grace_3"></label>
+                                    <input type="radio" title="@{grace}" name="attr_grace" id="grace_2" value="2"/><label for="grace_2"></label>
+                                    <input type="radio" title="@{grace}" checked="checked" name="attr_grace" id="grace_1" value="1"/><label for="grace_1"></label>
+                                </div>
+                            </span>
+                        </div>
                     </div>
-                    <div class="sheet-minor">
-                        <div class="sheet-characteristics-minor sheet-society-art">
-                            <input type="checkbox" title="@{art_2}" name="art_2" id="art_2" value="0"/><label for="art_2"></label>
-                            <input type="checkbox" title="@{art_3}" name="art_3" id="art_3" value="0"/><label for="art_3"></label>
-                            <input type="checkbox" title="@{art_4}" name="art_4" id="art_4" value="0"/><label for="art_4"></label>
+                    <div class="sheet-academia">
+                        <div class="sheet-main">
+                            <div class="sheet-main-container">
+                            <input type="radio" title="@{academia_2}" name="attr_academia" id="academia_2" value="2"><label for="academia_2"></label>
+                            <input type="radio" title="@{academia_1}" name="attr_academia" id="academia_1" value="1" checked="checked"><label for="academia_1"></label>
+                            </div>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-society-charm">
-                            <input type="checkbox" title="@{charm_2}" name="charm_2" id="charm_2" value="0"/><label for="charm_2"></label>
-                            <input type="checkbox" title="@{charm_3}" name="charm_3" id="charm_3" value="0"/><label for="charm_3"></label>
-                            <input type="checkbox" title="@{charm_4}" name="charm_4" id="charm_4" value="0"/><label for="charm_4"></label>
+                        <div class="sheet-minor">
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-academia-care">
+                                    <button class="sheet-data-skill-care" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{care}" name="attr_care" id="care_4" value="4"/><label for="care_4"></label>
+                                    <input type="radio" title="@{care}" name="attr_care" id="care_3" value="3"/><label for="care_3"></label>
+                                    <input type="radio" title="@{care}" name="attr_care" id="care_2" value="2"/><label for="care_2"></label>
+                                    <input type="radio" title="@{care}" checked="checked" name="attr_care" id="care_1" value="1"/><label for="care_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-academia-craft">
+                                    <button class="sheet-data-skill-craft" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{craft}" name="attr_craft" id="craft_4" value="4"/><label for="craft_4"></label>
+                                    <input type="radio" title="@{craft}" name="attr_craft" id="craft_3" value="3"/><label for="craft_3"></label>
+                                    <input type="radio" title="@{craft}" name="attr_craft" id="craft_2" value="2"/><label for="craft_2"></label>
+                                    <input type="radio" title="@{craft}" checked="checked" name="attr_craft" id="craft_1" value="1"/><label for="craft_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-academia-culture">
+                                    <button class="sheet-data-skill-culture" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{culture}" name="attr_culture" id="culture_4" value="4"/><label for="culture_4"></label>
+                                    <input type="radio" title="@{culture}" name="attr_culture" id="culture_3" value="3"/><label for="culture_3"></label>
+                                    <input type="radio" title="@{culture}" name="attr_culture" id="culture_2" value="2"/><label for="culture_2"></label>
+                                    <input type="radio" title="@{culture}" checked="checked" name="attr_culture" id="culture_1" value="1"/><label for="culture_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-academia-insight">
+                                    <button class="sheet-data-skill-insight" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{insight}" name="attr_insight" id="insight_4" value="4"/><label for="insight_4"></label>
+                                    <input type="radio" title="@{insight}" name="attr_insight" id="insight_3" value="3"/><label for="insight_3"></label>
+                                    <input type="radio" title="@{insight}" name="attr_insight" id="insight_2" value="2"/><label for="insight_2"></label>
+                                    <input type="radio" title="@{insight}" checked="checked" name="attr_insight" id="insight_1" value="1"/><label for="insight_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-academia-investigation">
+                                    <button class="sheet-data-skill-investigation" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{investigation}" name="attr_investigation" id="investigation_4" value="4"/><label for="investigation_4"></label>
+                                    <input type="radio" title="@{investigation}" name="attr_investigation" id="investigation_3" value="3"/><label for="investigation_3"></label>
+                                    <input type="radio" title="@{investigation}" name="attr_investigation" id="investigation_2" value="2"/><label for="investigation_2"></label>
+                                    <input type="radio" title="@{investigation}" checked="checked" name="attr_investigation" id="investigation_1" value="1"/><label for="investigation_1"></label>
+                                </div>
+                            </span>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-society-eloquence">
-                            <input type="checkbox" title="@{eloquence_2}" name="eloquence_2" id="eloquence_2" value="0"/><label for="eloquence_2"></label>
-                            <input type="checkbox" title="@{eloquence_3}" name="eloquence_3" id="eloquence_3" value="0"/><label for="eloquence_3"></label>
-                            <input type="checkbox" title="@{eloquence_4}" name="eloquence_4" id="eloquence_4" value="0"/><label for="eloquence_4"></label>
+                    </div>
+                    <div class="sheet-war">
+                        <div class="sheet-main">
+                            <div class="sheet-main-container">
+                            <input type="radio" title="@{war_2}" name="attr_war" id="war_2" value="2"><label for="war_2"></label>
+                            <input type="radio" title="@{war_1}" name="attr_war" id="war_1" value="1" checked="checked"><label for="war_1" ></label>
+                            </div>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-society-etiquette">
-                            <input type="checkbox" title="@{etiquette_2}" name="etiquette_2" id="etiquette_2" value="0"/><label for="etiquette_2"></label>
-                            <input type="checkbox" title="@{etiquette_3}" name="etiquette_3" id="etiquette_3" value="0"/><label for="etiquette_3"></label>
-                            <input type="checkbox" title="@{etiquette_4}" name="etiquette_4" id="etiquette_4" value="0"/><label for="etiquette_4"></label>
+                        <div class="sheet-minor">
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-war-athletics">
+                                    <button class="sheet-data-skill-athletics" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{athletics}" name="attr_athletics" id="athletics_4" value="4"/><label for="athletics_4"></label>
+                                    <input type="radio" title="@{athletics}" name="attr_athletics" id="athletics_3" value="3"/><label for="athletics_3"></label>
+                                    <input type="radio" title="@{athletics}" name="attr_athletics" id="athletics_2" value="2"/><label for="athletics_2"></label>
+                                    <input type="radio" title="@{athletics}" checked="checked" name="attr_athletics" id="athletics_1" value="1"/><label for="athletics_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-war-authority">
+                                    <button class="sheet-data-skill-authority" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{authority}" name="attr_authority" id="authority_4" value="4"/><label for="authority_4"></label>
+                                    <input type="radio" title="@{authority}" name="attr_authority" id="authority_3" value="3"/><label for="authority_3"></label>
+                                    <input type="radio" title="@{authority}" name="attr_authority" id="authority_2" value="2"/><label for="authority_2"></label>
+                                    <input type="radio" title="@{authority}" checked="checked" name="attr_authority" id="authority_1" value="1"/><label for="authority_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-war-fight">
+                                    <button class="sheet-data-skill-fight" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{fight}" name="attr_fight" id="fight_4" value="4"/><label for="fight_4"></label>
+                                    <input type="radio" title="@{fight}" name="attr_fight" id="fight_3" value="3"/><label for="fight_3"></label>
+                                    <input type="radio" title="@{fight}" name="attr_fight" id="fight_2" value="2"/><label for="fight_2"></label>
+                                    <input type="radio" title="@{fight}" checked="checked" name="attr_fight" id="fight_1" value="1"/><label for="fight_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-war-strength">
+                                    <button class="sheet-data-skill-strength" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{strength}" name="attr_strength" id="strength_4" value="4"/><label for="strength_4"></label>
+                                    <input type="radio" title="@{strength}" name="attr_strength" id="strength_3" value="3"/><label for="strength_3"></label>
+                                    <input type="radio" title="@{strength}" name="attr_strength" id="strength_2" value="2"/><label for="strength_2"></label>
+                                    <input type="radio" title="@{strength}" checked="checked" name="attr_strength" id="strength_1" value="1"/><label for="strength_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-war-will">
+                                    <button class="sheet-data-skill-will" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{will}" name="attr_will" id="will_4" value="4"/><label for="will_4"></label>
+                                    <input type="radio" title="@{will}" name="attr_will" id="will_3" value="3"/><label for="will_3"></label>
+                                    <input type="radio" title="@{will}" name="attr_will" id="will_2" value="2"/><label for="will_2"></label>
+                                    <input type="radio" title="@{will}" checked="checked" name="attr_will" id="will_1" value="1"/><label for="will_1"></label>
+                                </div>
+                            </span>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-society-grace">
-                            <input type="checkbox" title="@{grace_2}" name="grace_2" id="grace_2" value="0"/><label for="grace_2"></label>
-                            <input type="checkbox" title="@{grace_3}" name="grace_3" id="grace_3" value="0"/><label for="grace_3"></label>
-                            <input type="checkbox" title="@{grace_4}" name="grace_4" id="grace_4" value="0"/><label for="grace_4"></label>
+                    </div>
+                    <div class="sheet-street">
+                        <div class="sheet-main">
+                            <div class="sheet-main-container">
+                                <input type="radio" title="@{street_2}" name="attr_street" id="street_2" value="2"><label for="street_2"></label>
+                                <input type="radio" title="@{street_1}" name="attr_street" id="street_1" value="1" checked="checked"><label for="street_1"></label>
+                            </div>
+                        </div>
+                        <div class="sheet-minor">
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-street-caution">
+                                    <button class="sheet-data-skill-caution" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{caution}" name="attr_caution" id="caution_4" value="4"/><label for="caution_4"></label>
+                                    <input type="radio" title="@{caution}" name="attr_caution" id="caution_3" value="3"/><label for="caution_3"></label>
+                                    <input type="radio" title="@{caution}" name="attr_caution" id="caution_2" value="2"/><label for="caution_2"></label>
+                                    <input type="radio" title="@{caution}" checked="checked" name="attr_caution" id="caution_1" value="1"/><label for="caution_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-street-dexterity">
+                                    <button class="sheet-data-skill-dexterity" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{dexterity}" name="attr_dexterity" id="dexterity_4" value="4"/><label for="dexterity_4"></label>
+                                    <input type="radio" title="@{dexterity}" name="attr_dexterity" id="dexterity_3" value="3"/><label for="dexterity_3"></label>
+                                    <input type="radio" title="@{dexterity}" name="attr_dexterity" id="dexterity_2" value="2"/><label for="dexterity_2"></label>
+                                    <input type="radio" title="@{dexterity}" checked="checked" name="attr_dexterity" id="dexterity_1" value="1"/><label for="dexterity_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-street-elusion">
+                                    <button class="sheet-data-skill-elusion" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{elusion}" name="attr_elusion" id="elusion_4" value="4"/><label for="elusion_4"></label>
+                                    <input type="radio" title="@{elusion}" name="attr_elusion" id="elusion_3" value="3"/><label for="elusion_3"></label>
+                                    <input type="radio" title="@{elusion}" name="attr_elusion" id="elusion_2" value="2"/><label for="elusion_2"></label>
+                                    <input type="radio" title="@{elusion}" checked="checked" name="attr_elusion" id="elusion_1" value="1"/><label for="elusion_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-street-exploration">
+                                    <button class="sheet-data-skill-exploration" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{exploration}" name="attr_exploration" id="exploration_4" value="4"/><label for="exploration_4"></label>
+                                    <input type="radio" title="@{exploration}" name="attr_exploration" id="exploration_3" value="3"/><label for="exploration_3"></label>
+                                    <input type="radio" title="@{exploration}" name="attr_exploration" id="exploration_2" value="2"/><label for="exploration_2"></label>
+                                    <input type="radio" title="@{exploration}" checked="checked" name="attr_exploration" id="exploration_1" value="1"/><label for="exploration_1"></label>
+                                </div>
+                            </span>
+                            <span class="sheet-minor-characteristics-container">
+                                <div class="sheet-characteristics-minor sheet-street-shoot">
+                                    <button class="sheet-data-skill-shoot" type="action" name="act_rollskill" ></button>
+                                    <input type="radio" title="@{shoot}" name="attr_shoot" id="shoot_4" value="4"/><label for="shoot_4"></label>
+                                    <input type="radio" title="@{shoot}" name="attr_shoot" id="shoot_3" value="3"/><label for="shoot_3"></label>
+                                    <input type="radio" title="@{shoot}" name="attr_shoot" id="shoot_2" value="2"/><label for="shoot_2"></label>
+                                    <input type="radio" title="@{shoot}" checked="checked" name="attr_shoot" id="shoot_1" value="1"/><label for="shoot_1"></label>
+                                </div>
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="sheet-academia">
-                    <div class="sheet-main">
-                        <input type="checkbox" title="@{academia_2}" name="academia_2" id="academia_2" value="0"><label for="academia_2"></label>
-                    </div>
-                    <div class="sheet-minor">
-                        <div class="sheet-characteristics-minor sheet-academia-care">
-                            <input type="checkbox" title="@{care_2}" name="care_2" id="care_2" value="0"/><label for="care_2"></label>
-                            <input type="checkbox" title="@{care_3}" name="care_3" id="care_3" value="0"/><label for="care_3"></label>
-                            <input type="checkbox" title="@{care_4}" name="care_4" id="care_4" value="0"/><label for="care_4"></label>
+                <div class="sheet-aces-traits-moves">
+                    <div class="sheet-aces">
+                        <div class="sheet-ace-society">
+                            <input type="checkbox" title="@{ace_society}" name="attr_ace_society" id="ace_society" value="0"><label for="ace_society"></label>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-academia-craft">
-                            <input type="checkbox" title="@{craft_2}" name="craft_2" id="craft_2" value="0"/><label for="craft_2"></label>
-                            <input type="checkbox" title="@{craft_3}" name="craft_3" id="craft_3" value="0"/><label for="craft_3"></label>
-                            <input type="checkbox" title="@{craft_4}" name="craft_4" id="craft_4" value="0"/><label for="craft_4"></label>
+                        <div class="sheet-ace-academia">
+                            <input type="checkbox" title="@{ace_academia}" name="attr_ace_academia" id="ace_academia" value="0"><label for="ace_academia"></label>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-academia-culture">
-                            <input type="checkbox" title="@{culture_2}" name="culture_2" id="culture_2" value="0"/><label for="culture_2"></label>
-                            <input type="checkbox" title="@{culture_3}" name="culture_3" id="culture_3" value="0"/><label for="culture_3"></label>
-                            <input type="checkbox" title="@{culture_4}" name="culture_4" id="culture_4" value="0"/><label for="culture_4"></label>
+                        <div class="sheet-ace-war">
+                            <input type="checkbox" title="@{ace_war}" name="attr_ace_war" id="ace_war" value="0"><label for="ace_war"></label>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-academia-insight">
-                            <input type="checkbox" title="@{insight_2}" name="insight_2" id="insight_2" value="0"/><label for="insight_2"></label>
-                            <input type="checkbox" title="@{insight_3}" name="insight_3" id="insight_3" value="0"/><label for="insight_3"></label>
-                            <input type="checkbox" title="@{insight_4}" name="insight_4" id="insight_4" value="0"/><label for="insight_4"></label>
+                        <div class="sheet-ace-street">
+                            <input type="checkbox" title="@{ace_street}" name="attr_ace_street" id="ace_street" value="0"><label for="ace_street"></label>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-academia-investigation">
-                            <input type="checkbox" title="@{investigation_2}" name="investigation_2" id="investigation_2" value="0"/><label for="investigation_2"></label>
-                            <input type="checkbox" title="@{investigation_3}" name="investigation_3" id="investigation_3" value="0"/><label for="investigation_3"></label>
-                            <input type="checkbox" title="@{investigation_4}" name="investigation_4" id="investigation_4" value="0"/><label for="investigation_4"></label>
+                        <div class="sheet-ace-joker">
+                            <input type="checkbox" title="@{ace_joker}" name="attr_ace_joker" id="ace_joker" value="0"><label for="ace_joker"></label>
                         </div>
                     </div>
-                </div>
-                <div class="sheet-war">
-                    <div class="sheet-main">
-                        <input type="checkbox" title="@{war_2}" name="war_2" id="war_2" value="0"><label for="war_2"></label>
+                    <div class="sheet-traits">
+                        <textarea title="@{attr_traits}" name="attr_traits" id="attr_traits"></textarea>
                     </div>
-                    <div class="sheet-minor">
-                        <div class="sheet-characteristics-minor sheet-war-athletics">
-                            <input type="checkbox" title="@{athletics_2}" name="athletics_2" id="athletics_2" value="0"/><label for="athletics_2"></label>
-                            <input type="checkbox" title="@{athletics_3}" name="athletics_3" id="athletics_3" value="0"/><label for="athletics_3"></label>
-                            <input type="checkbox" title="@{athletics_4}" name="athletics_4" id="athletics_4" value="0"/><label for="athletics_4"></label>
+                    <div class="sheet-moves">
+                        <div class="sheet-move-one">
+                            <textarea title="@{move-one}" name="attr_move-one" id="move-one"></textarea>
+                            <div class="sheet-move-attributes">
+                                <input type="checkbox" title="@{move_one_used}" class="sheet-move-used" name="attr_move_one_used" id="move_one_used" value="0"/><label for="move_one_used"></label>
+                                <input type="checkbox" title="@{move_one_social}" class="sheet-move-social" name="attr_move_one_social" id="move_one_social" value="0"/><label for="move_one_social"></label>
+                                <input type="checkbox" title="@{move_one_academia}" class="sheet-move-academia" name="attr_move_one_academia" id="move_one_academia" value="0"/><label for="move_one_academia"></label>
+                                <input type="checkbox" title="@{move_one_war}" class="sheet-move-war" name="attr_move_one_war" id="move_one_war" value="0"/><label for="move_one_war"></label>
+                                <input type="checkbox" title="@{move_one_street}" class="sheet-move-street" name="attr_move_one_street" id="move_one_street" value="0"/><label for="move_one_street"></label>
+                            </div>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-war-charm">
-                            <input type="checkbox" title="@{authority_2}" name="authority_2" id="authority_2" value="0"/><label for="authority_2"></label>
-                            <input type="checkbox" title="@{authority_3}" name="authority_3" id="authority_3" value="0"/><label for="authority_3"></label>
-                            <input type="checkbox" title="@{authority_4}" name="authority_4" id="authority_4" value="0"/><label for="authority_4"></label>
+                        <div class="sheet-move-two">
+                            <textarea title="@{move-two}" name="attr_move-two" id="move-two"></textarea>
+                            <div class="sheet-move-attributes">
+                                <input type="checkbox" title="@{move_two_used}" class="sheet-move-used" name="attr_move_two_used" id="move_two_used" value="0"/><label for="move_two_used"></label>
+                                <input type="checkbox" title="@{move_two_social}" class="sheet-move-social" name="attr_move_two_social" id="move_two_social" value="0"/><label for="move_two_social"></label>
+                                <input type="checkbox" title="@{move_two_academia}" class="sheet-move-academia" name="attr_move_two_academia" id="move_two_academia" value="0"/><label for="move_two_academia"></label>
+                                <input type="checkbox" title="@{move_two_war}" class="sheet-move-war" name="attr_move_two_war" id="move_two_war" value="0"/><label for="move_two_war"></label>
+                                <input type="checkbox" title="@{move_two_street}" class="sheet-move-street" name="attr_move_two_street" id="move_two_street" value="0"/><label for="move_two_street"></label>
+                            </div>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-war-eloquence">
-                            <input type="checkbox" title="@{fight_2}" name="fight_2" id="fight_2" value="0"/><label for="fight_2"></label>
-                            <input type="checkbox" title="@{fight_3}" name="fight_3" id="fight_3" value="0"/><label for="fight_3"></label>
-                            <input type="checkbox" title="@{fight_4}" name="fight_4" id="fight_4" value="0"/><label for="fight_4"></label>
-                        </div>
-                        <div class="sheet-characteristics-minor sheet-war-etiquette">
-                            <input type="checkbox" title="@{strength_2}" name="strength_2" id="strength_2" value="0"/><label for="strength_2"></label>
-                            <input type="checkbox" title="@{strength_3}" name="strength_3" id="strength_3" value="0"/><label for="strength_3"></label>
-                            <input type="checkbox" title="@{strength_4}" name="strength_4" id="strength_4" value="0"/><label for="strength_4"></label>
-                        </div>
-                        <div class="sheet-characteristics-minor sheet-war-grace">
-                            <input type="checkbox" title="@{will_2}" name="will_2" id="will_2" value="0"/><label for="will_2"></label>
-                            <input type="checkbox" title="@{will_3}" name="will_3" id="will_3" value="0"/><label for="will_3"></label>
-                            <input type="checkbox" title="@{will_4}" name="will_4" id="will_4" value="0"/><label for="will_4"></label>
+                        <div class="sheet-move-three">
+                            <textarea title="@{move-three}" name="attr_move-three" id="move-three"></textarea>
+                            <div class="sheet-move-attributes">
+                                <input type="checkbox" title="@{move_three_used}" class="sheet-move-used" name="attr_move_three_used" id="move_three_used" value="0"/><label for="move_three_used"></label>
+                                <input type="checkbox" title="@{move_three_social}" class="sheet-move-social" name="attr_move_three_social" id="move_three_social" value="0"/><label for="move_three_social"></label>
+                                <input type="checkbox" title="@{move_three_academia}" class="sheet-move-academia" name="attr_move_three_academia" id="move_three_academia" value="0"/><label for="move_three_academia"></label>
+                                <input type="checkbox" title="@{move_three_war}" class="sheet-move-war" name="attr_move_three_war" id="move_three_war" value="0"/><label for="move_three_war"></label>
+                                <input type="checkbox" title="@{move_three_street}" class="sheet-move-street" name="attr_move_three_street" id="move_three_street" value="0"/><label for="move_three_street"></label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sheet-street">
-                    <div class="sheet-main">
-                        <input type="checkbox" title="@{street_2}" name="street_2" id="street_2" value="0"><label for="street_2"></label>
+            </div>
+            <div class="sheet-left-bottom">
+                <div class="sheet-equipment-wealth">
+                    <div class="sheet-wealth">
+                        <div class="sheet-upper-middle-class">
+                            <input type="radio" title="@{wealth}" name="attr_wealth" id="wealth_1" value="0"/><label for="wealth_1"></label>
+                            <input type="radio" title="@{wealth}" name="attr_wealth" id="wealth_2" value="1"/><label for="wealth_2"></label>
+                        </div>
+                        <div class="sheet-high-society">
+                            <input type="radio" title="@{wealth}" name="attr_wealth" id="wealth_3" value="2"/><label for="wealth_3"></label>
+                            <input type="radio" title="@{wealth}" name="attr_wealth" id="wealth_4" value="3"/><label for="wealth_4"></label>
+                        </div>
+                        <div class="sheet-gold">
+                            <input type="number" title="@{gold}" name="attr_gold" id="gold" value="0" /><label for="gold"></label>
+                        </div>
                     </div>
-                    <div class="sheet-minor">
-                        <div class="sheet-characteristics-minor sheet-street-caution">
-                            <input type="checkbox" title="@{caution_2}" name="caution_2" id="caution_2" value="0"/><label for="caution_2"></label>
-                            <input type="checkbox" title="@{caution_3}" name="caution_3" id="caution_3" value="0"/><label for="caution_3"></label>
-                            <input type="checkbox" title="@{caution_4}" name="caution_4" id="caution_4" value="0"/><label for="caution_4"></label>
+                    <div class="sheet-equipment-container">
+                        <div class="sheet-equipment-left">
+                            <textarea title="@{equipment-left}" name="attr_equipment-left" id="equipment-left"></textarea>
                         </div>
-                        <div class="sheet-characteristics-minor sheet-street-charm">
-                            <input type="checkbox" title="@{dexterity_2}" name="dexterity_2" id="dexterity_2" value="0"/><label for="dexterity_2"></label>
-                            <input type="checkbox" title="@{dexterity_3}" name="dexterity_3" id="dexterity_3" value="0"/><label for="dexterity_3"></label>
-                            <input type="checkbox" title="@{dexterity_4}" name="dexterity_4" id="dexterity_4" value="0"/><label for="dexterity_4"></label>
-                        </div>
-                        <div class="sheet-characteristics-minor sheet-street-eloquence">
-                            <input type="checkbox" title="@{elusion_2}" name="elusion_2" id="elusion_2" value="0"/><label for="elusion_2"></label>
-                            <input type="checkbox" title="@{elusion_3}" name="elusion_3" id="elusion_3" value="0"/><label for="elusion_3"></label>
-                            <input type="checkbox" title="@{elusion_4}" name="elusion_4" id="elusion_4" value="0"/><label for="elusion_4"></label>
-                        </div>
-                        <div class="sheet-characteristics-minor sheet-street-etiquette">
-                            <input type="checkbox" title="@{exploration_2}" name="exploration_2" id="exploration_2" value="0"/><label for="exploration_2"></label>
-                            <input type="checkbox" title="@{exploration_3}" name="exploration_3" id="exploration_3" value="0"/><label for="exploration_3"></label>
-                            <input type="checkbox" title="@{exploration_4}" name="exploration_4" id="exploration_4" value="0"/><label for="exploration_4"></label>
-                        </div>
-                        <div class="sheet-characteristics-minor sheet-street-grace">
-                            <input type="checkbox" title="@{shoot_2}" name="shoot_2" id="shoot_2" value="0"/><label for="shoot_2"></label>
-                            <input type="checkbox" title="@{shoot_3}" name="shoot_3" id="shoot_3" value="0"/><label for="shoot_3"></label>
-                            <input type="checkbox" title="@{shoot_4}" name="shoot_4" id="shoot_4" value="0"/><label for="shoot_4"></label>
+                        <div class="sheet-equipment-right">
+                            <textarea title="@{equipment-right}" name="attr_equipment-right" id="equipment-right"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="sheet-form-right-container">
+            <div class="sheet-right-left">
+                <div class="sheet-decorum">
+                    <input type="radio" class="sheet-uncouth" title="@{decorum}" name="attr_decorum" id="uncouth" value="0"/><label for="uncouth"></label>
+                    <input type="radio" class="sheet-shabby" title="@{decorum}" name="attr_decorum" id="shabby" value="1"/><label for="shabby"></label>
+                    <input type="radio" class="sheet-decent" title="@{decorum}" name="attr_decorum" id="decent" value="2"/><label for="decent"></label>
+                    <input type="radio" class="sheet-elegant" title="@{decorum}" name="attr_decorum" id="elegant" value="3"/><label for="elegant"></label>
+                    <input type="radio" class="sheet-pompous" title="@{decorum}" name="attr_decorum" id="pompous" value="4"/><label for="pompous"></label>
+                </div>
+                <div class="sheet-stress">
+                    <div class="sheet-inline-stress">
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_12" class="sheet-stress-12" value="12"/><label for="stress_12"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_11" class="sheet-stress-11" value="11"/><label for="stress_11"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_10" class="sheet-stress-10" value="10"/><label for="stress_10"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_9"  class="sheet-stress-9"value="9"/><label for="stress_9"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_8"  class="sheet-stress-8"value="8"/><label for="stress_8"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_7"  class="sheet-stress-7"value="7"/><label for="stress_7"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_6"  class="sheet-stress-6"value="6"/><label for="stress_6"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_5"  class="sheet-stress-5"value="5"/><label for="stress_5"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_4"  class="sheet-stress-4"value="4"/><label for="stress_4"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_3"  class="sheet-stress-3"value="3"/><label for="stress_3"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_2"  class="sheet-stress-2"value="2"/><label for="stress_2"></label>
+                        <input type="radio" title="@{stress}" name="attr_stress" id="stress_1"  class="sheet-stress-1"value="1"/><label for="stress_1"></label>
+                        <input type="radio" hidden title="@{stress}" name="attr_stress" id="stress_0" value="0"/>
+                    </div>
+                    <div class="sheet-heal-all">
+                        <button type="action" name="act_heal">Heal all stress</button>
+                    </div>
+                </div>
+                <div class="sheet-conditions">
+                    <div class="sheet-conditions-left">
+                        <div class="sheet-conditions-society">
+                            <input type="checkbox" title="@{condition_society}" name="attr_condition_society" id="condition_society" value="0"><label for="condition_society"></label>
+                        </div>
+                        <div class="sheet-conditions-academia">
+                            <input type="checkbox" title="@{condition_academia}" name="attr_condition_academia" id="condition_academia" value="0"><label for="condition_academia"></label>
+                        </div>
+                        <div class="sheet-conditions-war">
+                            <input type="checkbox" title="@{condition_war}" name="attr_condition_war" id="condition_war" value="0"><label for="condition_war"></label>
+                        </div>
+                        <div class="sheet-conditions-street">
+                            <input type="checkbox" title="@{condition_street}" name="attr_condition_street" id="condition_street" value="0"><label for="condition_street"></label>
+                        </div>
+                        <div class="sheet-conditions-text-upper">
+                            <input type="text"  title="@{conditions_text_upper}" name="attr_conditions_text_upper" id="conditions_text_upper">
+                        </div>
+                        <div class="sheet-conditions-text-lower">
+                            <input type="text" title="@{conditions_text_lower}" name="attr_conditions_text_lower" id="conditions_text_lower">
+                        </div>
+                    </div>
+                    <div class="sheet-conditions-right">
+                        <div class="sheet-conditions-crossed">
+                            <input type="checkbox" class="sheet-tired" title="@{conditions_checkbox_tired}" name="attr_conditions_checkbox_tired" id="conditions_checkbox_tired"><label for="conditions_checkbox_tired"></label>
+                            <input type="checkbox" class="sheet-sick" title="@{conditions_checkbox_sick}" name="attr_conditions_checkbox_sick" id="conditions_checkbox_sick"><label for="conditions_checkbox_sick"></label>
+                            <input type="checkbox" class="sheet-poisoned" title="@{conditions_checkbox_poisoned}" name="attr_conditions_checkbox_poisoned" id="conditions_checkbox_poisoned"><label for="conditions_checkbox_poisoned"></label>
+                            <input type="checkbox" class="sheet-broken" title="@{conditions_checkbox_broken}" name="attr_conditions_checkbox_broken" id="conditions_checkbox_broken"><label for="conditions_checkbox_broken"></label>
+                            <input type="checkbox" class="sheet-upper" title="@{conditions_checkbox_upper}" name="attr_conditions_checkbox_upper" id="conditions_checkbox_upper"><label for="conditions_checkbox_upper"></label>
+                            <input type="checkbox" class="sheet-lower" title="@{conditions_checkbox_lower}" name="attr_conditions_checkbox_lower" id="conditions_checkbox_lower"><label for="conditions_checkbox_lower"></label>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="sheet-contracts">
+                    <textarea title="@{contracts-text}" name="attr_contracts-text" id="contracts-text"></textarea>
+                </div>
+                <div class="sheet-ttt">
+                    <div class="sheet-ttt-container">
+                        <input type="radio" class="sheet-ttt-5" title="@{sheet-ttt-5}" name="attr_sheet-ttt" id="sheet-ttt-5" value="5"/><label for="sheet-ttt-5"></label>
+                        <input type="radio" class="sheet-ttt-4" title="@{sheet-ttt-4}" name="attr_sheet-ttt" id="sheet-ttt-4" value="4"/><label for="sheet-ttt-4"></label>
+                        <input type="radio" class="sheet-ttt-3" title="@{sheet-ttt-3}" name="attr_sheet-ttt" id="sheet-ttt-3" value="3"/><label for="sheet-ttt-3"></label>
+                        <input type="radio" class="sheet-ttt-2" title="@{sheet-ttt-2}" name="attr_sheet-ttt" id="sheet-ttt-2" value="2"/><label for="sheet-ttt-2"></label>
+                        <input type="radio" class="sheet-ttt-1" title="@{sheet-ttt-1}" name="attr_sheet-ttt" id="sheet-ttt-1" value="1"/><label for="sheet-ttt-1"></label>
+                        <input type="radio" class="sheet-ttt-0" title="@{sheet-ttt-0}" name="attr_sheet-ttt" id="sheet-ttt-0" value="0"/><label for="sheet-ttt-0"></label>
+                    </div>
+                </div>
+                <div class="sheet-notes">
+                    <textarea title="@{attr_notes}" name="attr_notes" id="attr_notes"></textarea>
+                </div>
+            </div>
+            <div class="sheet-right-right">
+                <div class="sheet-character-pass">
+                    <div class="sheet-character-name">
+                        <input type="text"  title="@{character_name}" name="attr_character_name" id="character_name">
+                    </div>
+                    <div class="sheet-character-folk">
+                        <input type="text"  title="@{character_folk}" name="attr_character_folk" id="character_folk">
+                    </div>
+                    <div class="sheet-character-homeland">
+                        <input type="text"  title="@{character_homeland}" name="attr_character_homeland" id="character_homeland">
+                    </div>
+                    <div class="sheet-character-profession">
+                        <input type="text"  title="@{character_profession}" name="attr_character_profession" id="character_profession">
+                    </div>
+                    <div class="sheet-character-vocation">
+                        <input type="text"  title="@{character_vocation}" name="attr_character_vocation" id="character_vocation">
+                    </div>
+                    <div class="sheet-character-languages">
+                        <input type="text"  title="@{character_languages}" name="attr_character_languages" id="character_languages">
+                    </div>
+                </div>
+                <div class="sheet-memories">
+                    <div class="sheet-memories-prologue">
+                        <input type="text"  title="@{memories_prologue}" name="attr_memories_prologue" id="memories_prologue">
+                    </div>
+                    <div class="sheet-memories-first">
+                        <input type="text"  title="@{memories_first}" name="attr_memories_first" id="memories_first">
+                    </div>
+                    <div class="sheet-memories-second">
+                        <input type="text"  title="@{character_second}" name="attr_character_second" id="character_second">
+                    </div>
+                    <div class="sheet-memories-third">
+                        <input type="text"  title="@{character_third}" name="attr_character_third" id="character_third">
+                    </div>
+                    <div class="sheet-memories-fourth">
+                        <textarea title="@{memories_fourth}" name="attr_memories_fourth" id="memories_fourth"></textarea>
+                    </div>
+                    <div class="sheet-memories-fifth">
+                        <textarea title="@{memories_fifth}" name="attr_memories_fifth" id="memories_fifth"></textarea>
+                    </div>
+                </div>
+                <div class="sheet-experiences">
+                    <textarea title="@{experiences}" name="attr_experiences" id="experiences"></textarea>
+                </div>
+            </div>
         </div>
 
     </div>
+    <div class="sheet-hidden-last-roll">
+        <input type="hidden" name="attr_roll_reroll" value="0">
+        <input type="hidden" name="attr_roll_skill" value="0">
+        <input type="hidden" name="attr_roll_attribute" value="0">
+        <input type="hidden" name="attr_roll_totaldice" value="0">
+        <input type="hidden" name="attr_roll_amountOne" value="0">
+        <input type="hidden" name="attr_roll_amountTwo" value="0">
+        <input type="hidden" name="attr_roll_amountThree" value="0">
+        <input type="hidden" name="attr_roll_amountFour" value="0">
+        <input type="hidden" name="attr_roll_amountFive" value="0">
+        <input type="hidden" name="attr_roll_amountSix" value="0">
+    </div>
+    <rolltemplate class="sheet-rolltemplate-householdroll">
+    <div class="sheet-household-header">
+        <div class="sheet-roll-dice-number-details">
+            <span class="sheet-pre-roll">
+                {{#rollBetween() computed::reroll 0 0}}
+                    Roll
+                {{/rollBetween() computed::reroll 0 0}}
+                {{#rollBetween() computed::reroll 1 1}}
+                    Reroll
+                {{/rollBetween() computed::reroll 1 1}}
+                {{#rollBetween() computed::reroll 2 2}}
+                    All in!
+                {{/rollBetween() computed::reroll 2 2}}
+            </span>
+            <div class="sheet-after-roll">
+                <span class="sheet-after-attribute">
+                {{#rollBetween() computed::attributeName 0 0}}
+                    Society
+                {{/rollBetween() computed::attributeName 0 0}}
+                {{#rollBetween() computed::attributeName 1 1}}
+                    Academia
+                {{/rollBetween() computed::attributeName 1 1}}
+                {{#rollBetween() computed::attributeName 2 2}}
+                    War
+                {{/rollBetween() computed::attributeName 2 2}}
+                {{#rollBetween() computed::attributeName 3 3}}
+                    Street
+                {{/rollBetween() computed::attributeName 3 3}}
+                
+                {{#rollBetween() computed::attribute 1 1}}
+                    1
+                {{/rollBetween() computed::attribute 1 1}}
+                {{#rollBetween() computed::attribute 2 2}}
+                    2
+                {{/rollBetween() computed::attribute 2 2}}
+                </span>
+                <span class="sheet-after-skill">
+                {{skillName}} 
+                {{#rollBetween() computed::skill 1 1}}
+                    1
+                {{/rollBetween() computed::skill 1 1}}
+                {{#rollBetween() computed::skill 2 2}}
+                    2
+                {{/rollBetween() computed::skill 2 2}}
+                {{#rollBetween() computed::skill 3 3}}
+                    3
+                {{/rollBetween() computed::skill 3 3}}
+                {{#rollBetween() computed::skill 4 4}}
+                    4
+                {{/rollBetween() computed::skill 4 4}}
+                </span>
+                {{#rollGreater() computed::modifier 0}}
+                <span class="sheet-after-modifier">
+                +
+                {{#rollBetween() computed::modifier 1 1}}
+                    1
+                {{/rollBetween() computed::modifier 1 1}}
+                {{#rollBetween() computed::modifier 2 2}}
+                    2
+                {{/rollBetween() computed::modifier 2 2}}
+                {{#rollBetween() computed::modifier 3 3}}
+                    3
+                {{/rollBetween() computed::modifier 3 3}}
+                </span>
+                {{/rollGreater() computed::modifier 0}}
+                {{#rollLess() computed::modifier 0}}
+                <span class="sheet-after-modifier">
+                -
+                {{#rollBetween() computed::modifier -1 -1}}
+                    1
+                {{/rollBetween() computed::modifier -1 -1}}
+                {{#rollBetween() computed::modifier -2 -2}}
+                    2
+                {{/rollBetween() computed::modifier -2 -2}}
+                {{#rollBetween() computed::modifier -3 -3}}
+                    3
+                {{/rollBetween() computed::modifier -3 -3}}
+                </span>
+                {{/rollLess() computed::modifier 0}}
+            </span>
+        </div>
+    </div>
+    <div class="sheet-household-roll">
+        <div class="sheet-roll-success">
+            <div class="sheet-main-success">
+            {{#rollLess() computed::success 2}}
+                Failure...
+            {{/rollLess() computed::success 2}}
+            {{#rollBetween() computed::success 2 2}}
+                Basic success!
+            {{/rollBetween() computed::success 2 2}}
+            {{#rollBetween() computed::success 3 3}}
+                Critical success!
+            {{/rollBetween() computed::success 3 3}}
+            {{#rollBetween() computed::success 4 4}}
+                Extreme success!
+            {{/rollBetween() computed::success 4 4}}
+            {{#rollBetween() computed::success 5 5}}
+                Impossible success!
+            {{/rollBetween() computed::success 5 5}}
+            {{#rollGreater() computed::success 5}}
+                Jackpot!
+            {{/rollGreater() computed::success 5}}
+            </div>
+            {{#rollGreater() computed::additionalSuccess 1}}
+            <div class="sheet-additional-successes">
+                Additional Success:
+                {{#rollBetween() computed::additionalSuccess 2 2}}
+                    1
+                {{/rollBetween() computed::additionalSuccess 2 2}}
+                {{#rollBetween() computed::additionalSuccess 3 3}}
+                    2
+                {{/rollBetween() computed::additionalSuccess 3 3}}
+                {{#rollBetween() computed::additionalSuccess 4 4}}
+                    3
+                {{/rollBetween() computed::additionalSuccess 4 4}}
+                
+            </div>
+            {{/rollGreater() computed::additionalSuccess 1}}
+        </div>
+        <div class="sheet-roll-rolls">
+            <div class="sheet-roll-household">
+                {{#rollGreater() computed::amountOne 0}}
+                    <div class="sheet-roll-household-dice">
+                        <span class="sheet-household-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountOne 0}}
+                {{#rollGreater() computed::amountOne 1}}
+                    <div class="sheet-roll-household-dice">
+                        <span class="sheet-household-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountOne 1}}
+                {{#rollGreater() computed::amountOne 2}}
+                    <div class="sheet-roll-household-dice">
+                        <span class="sheet-household-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountOne 2}}
+                {{#rollGreater() computed::amountOne 3}}
+                    <div class="sheet-roll-household-dice">
+                        <span class="sheet-household-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountOne 3}}
+                {{#rollGreater() computed::amountOne 4}}
+                    <div class="sheet-roll-household-dice">
+                        <span class="sheet-household-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountOne 4}}
+                {{#rollGreater() computed::amountOne 5}}
+                    <div class="sheet-roll-household-dice">
+                        <span class="sheet-household-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountOne 5}}
+                {{#rollGreater() computed::amountOne 6}}
+                    <div class="sheet-roll-household-dice">
+                        <span class="sheet-household-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountOne 6}}
+                {{#rollGreater() computed::amountOne 7}}
+                    <div class="sheet-roll-household-dice">
+                        <span class="sheet-household-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountOne 7}}
+                {{#rollGreater() computed::amountOne 8}}
+                    <div class="sheet-roll-household-dice">
+                        <span class="sheet-household-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountOne 8}}
+            </div>
+            <div class="sheet-roll-society">
+                {{#rollGreater() computed::amountTwo 0}}
+                    <div class="sheet-roll-society-dice">
+                        <span class="sheet-society-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountTwo 0}}
+                {{#rollGreater() computed::amountTwo 1}}
+                    <div class="sheet-roll-society-dice">
+                        <span class="sheet-society-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountTwo 1}}
+                {{#rollGreater() computed::amountTwo 2}}
+                    <div class="sheet-roll-society-dice">
+                        <span class="sheet-society-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountTwo 2}}
+                {{#rollGreater() computed::amountTwo 3}}
+                    <div class="sheet-roll-society-dice">
+                        <span class="sheet-society-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountTwo 3}}
+                {{#rollGreater() computed::amountTwo 4}}
+                    <div class="sheet-roll-society-dice">
+                        <span class="sheet-society-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountTwo 4}}
+                {{#rollGreater() computed::amountTwo 5}}
+                    <div class="sheet-roll-society-dice">
+                        <span class="sheet-society-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountTwo 5}}
+                {{#rollGreater() computed::amountTwo 6}}
+                    <div class="sheet-roll-society-dice">
+                        <span class="sheet-society-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountTwo 6}}
+                {{#rollGreater() computed::amountTwo 7}}
+                    <div class="sheet-roll-society-dice">
+                        <span class="sheet-society-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountTwo 7}}
+                {{#rollGreater() computed::amountTwo 8}}
+                    <div class="sheet-roll-society-dice">
+                        <span class="sheet-society-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountTwo 8}}
+            </div>
+            <div class="sheet-roll-academia">
+                {{#rollGreater() computed::amountThree 0}}
+                    <div class="sheet-roll-academia-dice">
+                        <span class="sheet-academia-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountThree 0}}
+                {{#rollGreater() computed::amountThree 1}}
+                    <div class="sheet-roll-academia-dice">
+                        <span class="sheet-academia-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountThree 1}}
+                {{#rollGreater() computed::amountThree 2}}
+                    <div class="sheet-roll-academia-dice">
+                        <span class="sheet-academia-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountThree 2}}
+                {{#rollGreater() computed::amountThree 3}}
+                    <div class="sheet-roll-academia-dice">
+                        <span class="sheet-academia-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountThree 3}}
+                {{#rollGreater() computed::amountThree 4}}
+                    <div class="sheet-roll-academia-dice">
+                        <span class="sheet-academia-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountThree 4}}
+                {{#rollGreater() computed::amountThree 5}}
+                    <div class="sheet-roll-academia-dice">
+                        <span class="sheet-academia-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountThree 5}}
+                {{#rollGreater() computed::amountThree 6}}
+                    <div class="sheet-roll-academia-dice">
+                        <span class="sheet-academia-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountThree 6}}
+                {{#rollGreater() computed::amountThree 7}}
+                    <div class="sheet-roll-academia-dice">
+                        <span class="sheet-academia-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountThree 7}}
+                {{#rollGreater() computed::amountThree 8}}
+                    <div class="sheet-roll-academia-dice">
+                        <span class="sheet-academia-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountThree 8}}
+            </div>
+            <div class="sheet-roll-war">
+                {{#rollGreater() computed::amountFour 0}}
+                    <div class="sheet-roll-war-dice">
+                        <span class="sheet-war-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFour 0}}
+                {{#rollGreater() computed::amountFour 1}}
+                    <div class="sheet-roll-war-dice">
+                        <span class="sheet-war-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFour 1}}
+                {{#rollGreater() computed::amountFour 2}}
+                    <div class="sheet-roll-war-dice">
+                        <span class="sheet-war-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFour 2}}
+                {{#rollGreater() computed::amountFour 3}}
+                    <div class="sheet-roll-war-dice">
+                        <span class="sheet-war-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFour 3}}
+                {{#rollGreater() computed::amountFour 4}}
+                    <div class="sheet-roll-war-dice">
+                        <span class="sheet-war-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFour 4}}
+                {{#rollGreater() computed::amountFour 5}}
+                    <div class="sheet-roll-war-dice">
+                        <span class="sheet-war-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFour 5}}
+                {{#rollGreater() computed::amountFour 6}}
+                    <div class="sheet-roll-war-dice">
+                        <span class="sheet-war-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFour 6}}
+                {{#rollGreater() computed::amountFour 7}}
+                    <div class="sheet-roll-war-dice">
+                        <span class="sheet-war-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFour 7}}
+                {{#rollGreater() computed::amountFour 8}}
+                    <div class="sheet-roll-war-dice">
+                        <span class="sheet-war-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFour 8}}
+            </div>
+            <div class="sheet-roll-street">
+                {{#rollGreater() computed::amountFive 0}}
+                    <div class="sheet-roll-street-dice">
+                        <span class="sheet-street-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFive 0}}
+                {{#rollGreater() computed::amountFive 1}}
+                    <div class="sheet-roll-street-dice">
+                        <span class="sheet-street-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFive 1}}
+                {{#rollGreater() computed::amountFive 2}}
+                    <div class="sheet-roll-street-dice">
+                        <span class="sheet-street-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFive 2}}
+                {{#rollGreater() computed::amountFive 3}}
+                    <div class="sheet-roll-street-dice">
+                        <span class="sheet-street-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFive 3}}
+                {{#rollGreater() computed::amountFive 4}}
+                    <div class="sheet-roll-street-dice">
+                        <span class="sheet-street-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFive 4}}
+                {{#rollGreater() computed::amountFive 5}}
+                    <div class="sheet-roll-street-dice">
+                        <span class="sheet-street-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFive 5}}
+                {{#rollGreater() computed::amountFive 6}}
+                    <div class="sheet-roll-street-dice">
+                        <span class="sheet-street-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFive 6}}
+                {{#rollGreater() computed::amountFive 7}}
+                    <div class="sheet-roll-street-dice">
+                        <span class="sheet-street-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFive 7}}
+                {{#rollGreater() computed::amountFive 8}}
+                    <div class="sheet-roll-street-dice">
+                        <span class="sheet-street-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountFive 8}}
+            </div>
+            <div class="sheet-roll-house">
+                {{#rollGreater() computed::amountSix 0}}
+                    <div class="sheet-roll-house-dice">
+                        <span class="sheet-house-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountSix 0}}
+                {{#rollGreater() computed::amountSix 1}}
+                    <div class="sheet-roll-house-dice">
+                        <span class="sheet-house-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountSix 1}}
+                {{#rollGreater() computed::amountSix 2}}
+                    <div class="sheet-roll-house-dice">
+                        <span class="sheet-house-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountSix 2}}
+                {{#rollGreater() computed::amountSix 3}}
+                    <div class="sheet-roll-joker-dice">
+                        <span class="sheet-joker-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountSix 3}}
+                {{#rollGreater() computed::amountSix 4}}
+                    <div class="sheet-roll-house-dice">
+                        <span class="sheet-house-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountSix 4}}
+                {{#rollGreater() computed::amountSix 5}}
+                    <div class="sheet-roll-house-dice">
+                        <span class="sheet-house-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountSix 5}}
+                {{#rollGreater() computed::amountSix 6}}
+                    <div class="sheet-roll-house-dice">
+                        <span class="sheet-house-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountSix 6}}
+                {{#rollGreater() computed::amountSix 7}}
+                    <div class="sheet-roll-house-dice">
+                        <span class="sheet-house-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountSix 7}}
+                {{#rollGreater() computed::amountSix 8}}
+                    <div class="sheet-roll-joker-dice">
+                        <span class="sheet-joker-icon"></span>
+                    </div>
+                {{/rollGreater() computed::amountSix 8}}
+            </div>
+        </div>
+    </div>
+    {{#rollBetween() computed::reroll 0 0}}
+        {{#rollGreater() computed::diceLeftover 0}}
+            {{#rollGreater() computed::success 1}}
+                <div class="sheet-household-options">
+                    [<span class="sheet-skill-reroll sheet-data-skill-{{skillName}}">Reroll</span>](~{{character_id}}|rollskill||{{skillName}}|{{computed::attributeName}}|{{modifier}})
+                </div>
+            {{/rollGreater() computed::success 1}}
+        {{/rollGreater() computed::diceLeftover 0}}
+    {{/rollBetween() computed::reroll 0 0}}
+    {{#rollBetween() computed::reroll 1 1}}
+        {{#rollGreater() computed::diceLeftover 0}}
+            {{#rollGreater() computed::success 1}}
+                <div class="sheet-household-options">
+                    [<span class="sheet-skill-reroll sheet-data-skill-{{skillName}}">All in!</span>](~{{character_id}}|rollskill||{{skillName}}|{{computed::attributeName}}|{{modifier}})
+                </div>
+            {{/rollGreater() computed::success 1}}
+        {{/rollGreater() computed::diceLeftover 0}}
+    {{/rollBetween() computed::reroll 1 1}}
+</rolltemplate>
+<script type="text/worker">   
+on('clicked:heal', (info) => {
+setAttrs({                            
+    "stress": 0
+  });
+}
+)
+on('clicked:rollskill', async (info) => {
+
+
+    let reroll=false
+    let skillString=''
+    if(info.htmlAttributes.class) {
+        //get skillname for base roll from class
+        let infoClasses=info.htmlAttributes.class.split(' ')
+        infoClasses.forEach( function(infoclass) {
+            if(infoclass.startsWith('sheet-data-skill-')) {
+                skillString=infoclass.substring(17)
+            }
+        })
+    } else {
+        reroll=true
+    }
+    if(!reroll) {
+        //base roll
+        let rollResult = await startRoll("&{template:householdroll} {{diceLeftover=[[1d6]]}} {{character_id=@{character_id}}} {{mainroll=[[9d6]]}} {{totaldice=[[1d6]]}} {{additionalSuccess=[[0]]}} {{success=[[1d6]]}} {{skillName="+skillString+"}} {{attributeName=[[1d6]]}} {{skill=[[1d6]]}} {{attribute=[[(?{Vorgehensweise|Society,0|Academia,1|War,2|Street,3})]]}} {{modifier=[[?{Modifier(-3 to +3)?|0}]]}} {{amountOne=[[1d6]]}} {{amountTwo=[[1d6]]}} {{amountThree=[[1d6]]}} {{amountFour=[[1d6]]}} {{amountFive=[[1d6]]}} {{amountSix=[[1d6]]}} {{previousSuccess=[[1d6]]}} {{reroll=[[1d6]]}}");
+        
+        let stats = await getRollStats(rollResult,info,skillString)
+        
+        let updateResult = await updateRoll(rollResult,stats)
+        
+        let savedDice = await saveDice(updateResult,stats)
+        console.log(updateResult.diceLeftover)
+        finishRoll(
+            rollResult.rollId, {
+                previousSuccess: 0,
+                success:updateResult.success,
+                attributeName: stats.attributeName,
+                skill: stats.skill,
+                attribute: stats.attribute,
+                amountOne: updateResult.amountDiceByNumber[1],
+                amountTwo: updateResult.amountDiceByNumber[2],
+                amountThree: updateResult.amountDiceByNumber[3],
+                amountFour: updateResult.amountDiceByNumber[4],
+                amountFive: updateResult.amountDiceByNumber[5],
+                amountSix: updateResult.amountDiceByNumber[6],
+                modifier: updateResult.modifier,
+                totaldice: updateResult.totaldice,
+                additionalSuccess:updateResult.additionalSuccess,
+                reroll:0,
+                diceLeftover:updateResult.diceLeftover
+            }
+        )
+    } else {
+        //reroll or all or nothing
+            let skillName='';
+            let attributeKey='';
+            let modifier=0
+        if (info.originalRollId != null) {
+            let inlineArguments = info.originalRollId.split('|')
+            skillName=inlineArguments[0];
+            attributeKey=inlineArguments[1].split("'>")[1]
+            modifier=parseInt(inlineArguments[2])||0;
+        }
+
+        let rollResult = await startRoll("&{template:householdroll} {{diceLeftover=[[1d6]]}} {{character_id=@{character_id}}} {{mainroll=[[9d6]]}} {{totaldice=[[1d6]]}} {{additionalSuccess=[[0]]}} {{success=[[1d6]]}} {{attribute=[[1d6]]}} {{skillName="+skillName+"}} {{attributeName=[[1d6]]}} {{modifier=[[1d6]]}} {{skill=[[1d6]]}} {{amountOne=[[1d6]]}} {{amountTwo=[[1d6]]}} {{amountThree=[[1d6]]}} {{amountFour=[[1d6]]}} {{amountFive=[[1d6]]}} {{amountSix=[[1d6]]}} {{previousSuccess=[[1d6]]}} {{reroll=[[1d6]]}}");
+        
+        let rerollStats = await getRerollStats(rollResult)
+        
+        let updateResult = await updateReroll(rollResult,rerollStats)
+        
+        let savedDice = await saveDice(updateResult,rerollStats)
+        
+        console.log(updateResult.diceLeftover)
+        
+        finishRoll(
+            rollResult.rollId, {
+                previousSuccess: 0,
+                success:updateResult.success,
+                skill: rerollStats.skill,
+                attribute: rerollStats.attribute,
+                attributeName: attributeKey,
+                modifier: modifier,
+                amountOne: updateResult.amountDiceByNumber[1],
+                amountTwo: updateResult.amountDiceByNumber[2],
+                amountThree: updateResult.amountDiceByNumber[3],
+                amountFour: updateResult.amountDiceByNumber[4],
+                amountFive: updateResult.amountDiceByNumber[5],
+                amountSix: updateResult.amountDiceByNumber[6],
+                totaldice: rerollStats.totaldice,
+                additionalSuccess:updateResult.additionalSuccess,
+                reroll:rerollStats.reroll,
+                diceLeftover:updateResult.diceLeftover
+            }
+        )
+    }
+})
+
+const getRollStats =async (results,info,skillString) => {
+    let attributeString=0;
+    let attributeKey=0;
+    if(results.results.attribute.result==0) {
+        attributeString='society'
+        attributeKey=0
+    }
+    if(results.results.attribute.result==1) {
+        attributeString='academia'
+        attributeKey=1
+    }
+    if(results.results.attribute.result==2) {
+        attributeString='war'
+        attributeKey=2
+    }
+    if(results.results.attribute.result==3) {
+        attributeString='street'
+        attributeKey=3
+    }
+    //skillString is accessed before roll happens
+    let sheetAttributes = await asw.getAttrs([attributeString,skillString])
+    let attribute=parseInt(sheetAttributes[attributeString])||0;
+    skill=parseInt(sheetAttributes[skillString])||0;
+    return {
+        attributeName:attributeKey,
+        skill:skill,
+        attribute:attribute
+    }
+
+}
+
+const getRerollStats= async (results) => {
+    
+    const fetchNames = ['roll_totaldice','roll_attribute', 'roll_skill', 'roll_amountOne', 'roll_amountTwo', 'roll_amountThree', 'roll_amountFour', 'roll_amountFive', 'roll_amountSix', 'roll_reroll']
+    
+    let rollAttributes = await asw.getAttrs(fetchNames)
+    
+    return {
+        skill:parseInt(rollAttributes['roll_skill'])||0,
+        attribute:parseInt(rollAttributes['roll_attribute'])||0,
+        totaldice:parseInt(rollAttributes['roll_totaldice'])||0,
+        amountOne: parseInt(rollAttributes['roll_amountOne'])||0,
+        amountTwo: parseInt(rollAttributes['roll_amountTwo'])||0,
+        amountThree: parseInt(rollAttributes['roll_amountThree'])||0,
+        amountFour: parseInt(rollAttributes['roll_amountFour'])||0,
+        amountFive: parseInt(rollAttributes['roll_amountFive'])||0,
+        amountSix: parseInt(rollAttributes['roll_amountSix'])||0,
+        reroll: parseInt(rollAttributes['roll_reroll'])+1||0
+    }
+}
+
+
+const updateRoll = async (results,stats) => {
+    let modifier = results.results.modifier.result;
+    if(modifier>3) {
+        modifier=3
+    }
+    if(modifier<-3) {
+        modifer=-3
+    }
+    
+    let totaldice=stats.skill+stats.attribute+modifier;
+    if(totaldice<2) {
+        totaldice=2
+    }
+    if(totaldice>10) {
+        totaldice=9
+    }
+    const rolls= results.results.mainroll.dice;
+    let newRolls=[]
+    //get all dice in new array
+    for (let i=0;i<totaldice;i++) {
+        newRolls[i]=rolls[i]
+    }
+    //determine what kind of success
+    let success=0;
+    let currentNumber=0;
+    let amountDiceByNumber={1:0,2:0,3:0,4:0,5:0,6:0}
+    for (let j=0;j<totaldice;j++) {
+        currentNumber=newRolls[j];
+        amountDiceByNumber[currentNumber]++;
+        if(amountDiceByNumber[currentNumber]>success) {
+            success=amountDiceByNumber[currentNumber]
+        }
+    }
+    //additional success:
+    let additionalSuccess = 0;
+    let diceLeftover = 0;
+    for (let k=1;k<7;k++) {
+        if(amountDiceByNumber[k]>=2) {
+            additionalSuccess++
+        } 
+        if(amountDiceByNumber[k]==1) {
+            diceLeftover++;
+        }
+    }
+
+    return {
+        additionalSuccess:additionalSuccess,
+        amountDiceByNumber:amountDiceByNumber,
+        success:success,
+        totaldice:stats.skill+stats.attribute+modifier,
+        modifier:modifier,
+        diceLeftover:diceLeftover
+    }
+}
+
+const updateReroll = async (results, stats) => {
+    //get new dice:
+    const rolls= results.results.mainroll.dice;
+    let newRolls=[]
+    //get all dice in new array
+    for (let i=0;i<stats.totaldice;i++) {
+        newRolls[i]=rolls[i]
+    }
+    //replace start of new dice with old values:
+    let arrayHead = 0;
+    if(stats.amountOne>1) {
+        for(let i =0;i<stats.amountOne;i++) {
+            arrayHead++;
+            newRolls[arrayHead]=1
+        }
+    }
+    if(stats.amountTwo>1) {
+        for(let i =0;i<stats.amountTwo;i++) {
+            arrayHead++;
+            newRolls[arrayHead]=2
+        }
+    }
+    
+    if(stats.amountThree>1) {
+        for(let i =0;i<stats.amountThree;i++) {
+            arrayHead++;
+            newRolls[arrayHead]=3
+        }
+    }
+    
+    if(stats.amountFour>1) {
+        for(let i =0;i<stats.amountFour;i++) {
+            arrayHead++;
+            newRolls[arrayHead]=4
+        }
+    }
+    
+    if(stats.amountFive>1) {
+        for(let i =0;i<stats.amountFive;i++) {
+            arrayHead++;
+            newRolls[arrayHead]=5
+        }
+    }
+    
+    if(stats.amountSix>1) {
+        for(let i =0;i<stats.amountSix;i++) {
+            arrayHead++;
+            newRolls[arrayHead]=6
+        }
+    }
+
+    //count number of dice again and determine success
+    let success=0;
+    let currentNumber=0;
+    let amountDiceByNumber={1:0,2:0,3:0,4:0,5:0,6:0}
+    for (let j=0;j<stats.totaldice;j++) {
+        currentNumber=newRolls[j];
+        amountDiceByNumber[currentNumber]++;
+        if(amountDiceByNumber[currentNumber]>success) {
+            success=amountDiceByNumber[currentNumber]
+        }
+    }
+
+    //additional success:
+    let additionalSuccess = 0;
+    let diceLeftover = 0;
+    for (let k=1;k<7;k++) {
+        if(amountDiceByNumber[k]>=2) {
+            additionalSuccess++
+        }
+        if(amountDiceByNumber[k]==1) {
+            diceLeftover++;
+        }
+    }
+
+    
+    //determine success of new dice with old success:
+    let rerollSuccess = 0;
+    if((amountDiceByNumber[1]>1 && amountDiceByNumber[1]>stats.amountOne)||(amountDiceByNumber[2]>1 && amountDiceByNumber[2]>stats.amountTwo)||(amountDiceByNumber[3]>1 && amountDiceByNumber[3]>stats.amountThree)||(amountDiceByNumber[4]>1 && amountDiceByNumber[4]>stats.amountFour)||(amountDiceByNumber[5]>1 && amountDiceByNumber[5]>stats.amountFive)||(amountDiceByNumber[6]>1 && amountDiceByNumber[6]>stats.amountSix)) {
+        rerollSuccess=success;
+    }
+    
+    return {
+        additionalSuccess:additionalSuccess,
+        amountDiceByNumber:amountDiceByNumber,
+        success:rerollSuccess,
+        totaldice:stats.totaldice,
+        diceLeftover:diceLeftover
+    }
+}
+
+const saveDice = async (results, stats) => {
+    let rollResults = {
+        'roll_attribute': stats.attribute,
+        'roll_skill': stats.skill,
+        'roll_reroll': stats.reroll||0,
+        'roll_totaldice': results.totaldice,
+        'roll_amountOne': results.amountDiceByNumber[1],
+        'roll_amountTwo': results.amountDiceByNumber[2],
+        'roll_amountThree': results.amountDiceByNumber[3],
+        'roll_amountFour': results.amountDiceByNumber[4],
+        'roll_amountFive': results.amountDiceByNumber[5],
+        'roll_amountSix': results.amountDiceByNumber[6]
+    }
+    return await asw.setAttrs(rollResults)
+    
+}
+
+    //asw worker from brokencompass
+    const asw = (() => {
+    const setActiveCharacterId = function(charId){
+        let oldAcid=getActiveCharacterId();
+        let ev = new CustomEvent("message");
+        ev.data={"id":"0", "type":"setActiveCharacter", "data":charId};
+        self.dispatchEvent(ev);
+        return oldAcid;
+    };
+    const promisifyWorker = (worker, parameters) => {
+        let acid=getActiveCharacterId();
+        let prevAcid=null;
+        return new Promise((res,rej)=>{
+            prevAcid=setActiveCharacterId(acid);
+            try {if (worker===0) getAttrs(parameters[0]||[],(v)=>res(v));
+                else if (worker===1) setAttrs(parameters[0]||{}, parameters[1]||{},(v)=>res(v));
+                else if (worker===2) getSectionIDs(parameters[0]||'',(v)=>res(v));
+            } catch(err) {rej(console.error(err))}
+        }).finally(()=>setActiveCharacterId(prevAcid));
+    }
+    
+    return {
+        getAttrs(attrArray) {return promisifyWorker(0, [attrArray])},
+        setAttrs(attrObj, options) {return promisifyWorker(1, [attrObj, options])},
+        getSectionIDs(section) {return promisifyWorker(2, [section])},
+        setActiveCharacterId,
+    }
+})();
+</script>
 </form>
+
